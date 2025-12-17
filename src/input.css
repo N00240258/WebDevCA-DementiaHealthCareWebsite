@@ -4,12 +4,22 @@
 @theme {
     --color-primary: #FFFDF5 ;
     --color-secondary: #FBFFEB ;
-    --color-tertiary: #ffbb5b ;
+    --color-secondary-surface: #D3D6C6 ;
+    --color-tertiary: #FFBB5B ;
     --color-blue: #A8E0EF ;
     --color-text: #040404 ;
     --color-muted: #4D4D4D ;
+    --color-footer: #2B2B2A ;
 }
 
 html {
     font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.border{
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 12px;
+    filter: drop-shadow(4px 4px)
 }
