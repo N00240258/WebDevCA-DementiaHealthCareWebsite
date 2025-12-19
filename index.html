@@ -8,98 +8,59 @@
     <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
 </head>
 <body class="bg-primary">
-<nav class="relative bg-gray-800">
-    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div class="relative flex h-16 items-center justify-between">
-            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                <!-- Mobile menu button-->
-                <button type="button" command="--toggle" commandfor="mobile-menu"
-                    class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
-                    <span class="absolute -inset-0.5"></span>
-                    <span class="sr-only">Open main menu</span>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
-                        aria-hidden="true" class="size-6 in-aria-expanded:hidden">
-                        <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
-                        aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
-                        <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </button>
-            </div>
-            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div class="flex shrink-0 items-center">
-                    <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-                        alt="Your Company" class="h-8 w-auto" />
-                </div>
-                <div class="hidden sm:ml-6 sm:block">
-                    <div class="flex space-x-4">
-                        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
-                        <a href="#" aria-current="page"
-                            class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">Dashboard</a>
-                        <a href="#"
-                            class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Team</a>
-                        <a href="#"
-                            class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Projects</a>
-                        <a href="#"
-                            class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Calendar</a>
-                    </div>
-                </div>
-            </div>
-            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <button type="button"
-                    class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
-                    <span class="absolute -inset-1.5"></span>
-                    <span class="sr-only">View notifications</span>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
-                        aria-hidden="true" class="size-6">
-                        <path
-                            d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </button>
-
-                <!-- Profile dropdown -->
-                <el-dropdown class="relative ml-3">
-                    <button
-                        class="relative flex rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
-                        <span class="absolute -inset-1.5"></span>
-                        <span class="sr-only">Open user menu</span>
-                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                            alt="" class="size-8 rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10" />
-                    </button>
-
-                    <el-menu anchor="bottom end" popover
-                        class="w-48 origin-top-right rounded-md bg-white py-1 shadow-lg outline outline-black/5 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
-                        <a href="#"
-                            class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:outline-hidden">Your
-                            profile</a>
-                        <a href="#"
-                            class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:outline-hidden">Settings</a>
-                        <a href="#"
-                            class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:outline-hidden">Sign
-                            out</a>
-                    </el-menu>
-                </el-dropdown>
+<nav class="relative bg-white border-b-4 border-black">
+  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="relative flex h-fit items-center justify-between py-2" >
+      <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
+        <!-- Mobile menu button-->
+        <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-white/5 hover:text-gray-700 focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+          <span class="absolute -inset-0.5"></span>
+          <span class="sr-only">Open main menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+            <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="flex flex-1 items-center justify-between sm:items-stretch sm:justify-end">
+        <div class="flex shrink-0 items-center">
+          <div class="rounded-full bg-tertiary border-2 border-black" style="box-shadow: 2px 2px 0px 0 #000;">
+                <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" class="flex-grow h-16">
+                <path
+                    d="M56.88 34.4267C57.12 38.56 55.2267 42.5333 51.84 44.96L53.8934 48.9333C54.5067 50.1333 54.5867 51.5467 54.0534 52.8C53.5467 54.0533 52.5067 55.04 51.2267 55.4667L49.12 56.1333C48.2427 56.4277 47.2961 56.4448 46.4087 56.1824C45.5213 55.92 44.7362 55.3908 44.16 54.6667L38.5067 48C36.1334 47.6 33.8934 46.5867 32 45.0667C30.6667 45.4667 29.3334 45.68 28 45.68C25.6534 45.68 23.3067 44.96 21.3334 43.5733C19.92 44 18.48 44.1867 17.0134 44.16C14.9067 44.1867 12.8267 43.76 10.88 42.96C9.00532 42.1252 7.4034 40.7797 6.25746 39.0773C5.11152 37.3749 4.46784 35.3844 4.40003 33.3333C4.1867 31.4133 4.5067 29.4667 5.33336 27.7067C4.56003 25.7067 4.48003 23.52 5.1467 21.4933C6.13336 18.96 8.00003 16.8533 10.32 15.52C11.8667 11.0133 16.2134 8 20.9867 8.32C25.2534 4.32 31.7867 3.89333 36.5334 7.33333C37.6534 7.04 38.8267 6.88 40 6.88C43.6267 6.8 47.0667 8.4 49.3334 11.2533C54.7734 12.6667 58.6667 17.52 58.88 23.1733C59.0134 26.1333 58.2134 29.04 56.5867 31.52C56.7734 32.48 56.88 33.44 56.88 34.4267ZM43.5467 30.6667C45.0667 30.8533 46.2667 32 46.2667 33.52C46.2667 34.2272 45.9858 34.9055 45.4857 35.4056C44.9856 35.9057 44.3073 36.1867 43.6 36.1867H41.92C41.0667 38.5867 39.5734 40.6933 37.6 42.2933C38.2667 42.5333 38.96 42.6667 39.6534 42.8533C53.3334 42.6667 51.7334 34.32 51.7334 34.1867C51.699 33.2795 51.4862 32.3879 51.1069 31.563C50.7277 30.7382 50.1896 29.9962 49.5233 29.3795C48.8571 28.7627 48.0758 28.2834 47.2242 27.9689C46.3725 27.6545 45.4672 27.511 44.56 27.5467C43.8528 27.5467 43.1745 27.2657 42.6744 26.7656C42.1743 26.2655 41.8934 25.5872 41.8934 24.88C41.8934 24.1728 42.1743 23.4945 42.6744 22.9944C43.1745 22.4943 43.8528 22.2133 44.56 22.2133C47.84 22.2933 50.9867 23.52 53.44 25.68C53.5734 24.9067 53.6534 24.1067 53.6534 23.3067C53.4934 20 52 17.12 46 16.56C42.6667 8.66666 34.2667 13.04 34.2667 15.4933C34.1867 16.1067 34.8267 17.4133 34.9334 17.4933C35.6406 17.4933 36.3189 17.7743 36.819 18.2744C37.3191 18.7745 37.6 19.4528 37.6 20.16C37.6 21.6267 36.4 22.8267 34.9334 22.8267C33.52 22.7733 32.1867 22.24 31.12 21.3333C29.84 22.16 28.3734 22.6667 26.8534 22.8267C25.3334 22.96 24.08 21.8933 24 20.4267C23.9517 20.0784 23.9749 19.724 24.0681 19.385C24.1613 19.0461 24.3227 18.7297 24.5423 18.4551C24.7619 18.1806 25.0352 17.9537 25.3454 17.7884C25.6557 17.623 25.9964 17.5226 26.3467 17.4933C26.7734 17.44 28.8534 17.12 28.8534 15.44C28.8534 13.68 29.52 12 30.6667 10.6667C28.2134 10 25.5734 10.88 22.9067 14.1067C18 13.3333 16 14 14.5334 19.2C12 20.4533 10.6667 21.3333 10.08 24C12.96 23.4133 15.92 23.6533 18.6667 24.6667C20 25.1733 20.7467 26.6667 20.24 28.1067C19.7334 29.4933 18.1867 30.1867 16.8 29.68C14.8534 28.8267 12.6667 28.7733 10.6667 29.52C9.81336 30.24 9.81336 31.7333 9.81336 32.9067C9.81336 34.88 10.8 36.72 12.48 37.7867C13.8934 38.5067 15.4667 38.88 17.04 38.8533C16.64 38.16 16.2934 37.44 16 36.6933C15.7901 36.0082 15.854 35.2684 16.1784 34.6294C16.5028 33.9904 17.0623 33.5022 17.7393 33.2673C18.4163 33.0324 19.158 33.0693 19.8084 33.37C20.4588 33.6708 20.9672 34.2121 21.2267 34.88C22.2934 37.92 25.0134 40 28.2134 40.3467C31.8667 40.16 35.12 38 36.72 34.6667C37.3334 30.9867 40.2934 30.6667 43.5467 30.6667ZM48.88 50.5867L47.2267 47.12L45.3334 47.5467L48 50.88L48.88 50.5867ZM36.48 27.6267C36.5032 26.9454 36.2647 26.2812 35.8133 25.7704C35.362 25.2596 34.7323 24.941 34.0534 24.88C32.16 24.7733 30.32 25.4133 28.9067 26.6667C27.3867 28.2133 26.5867 30.3467 26.6667 32.5067C26.6667 33.2139 26.9477 33.8922 27.4478 34.3923C27.9478 34.8924 28.6261 35.1733 29.3334 35.1733C30.8534 35.1733 32 33.9733 32 32.5067C32 31.7867 32.1867 31.0667 32.6134 30.48C32.9334 30.2133 33.3334 30.08 33.76 30.08C35.2267 30.16 36.48 29.0667 36.48 27.6267Z"
+                    fill="black"
+                    stroke="#FFBB5B"
+                    stroke-width="3"
+                ></path>
+                </svg>
             </div>
         </div>
-    </div>
-
-    <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
-        <div class="space-y-1 px-2 pt-2 pb-3">
+        <div class="hidden sm:ml-6 sm:block">
+          <div class="flex space-x-4">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
-            <a href="#" aria-current="page"
-                class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white">Dashboard</a>
-            <a href="#"
-                class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Team</a>
-            <a href="#"
-                class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Projects</a>
-            <a href="#"
-                class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Calendar</a>
+            <a href="#" class="rounded-md px-3 py-2 text-lg font-medium text-text hover:bg-black/7">Home</a>
+            <a href="#" class="rounded-md px-3 py-2 text-lg font-medium text-text hover:bg-black/7">News</a>
+            <a href="#" class="rounded-md px-3 py-2 text-lg font-medium text-text hover:bg-black/7">More Info</a>
+            <a href="#" class="rounded-md px-3 py-2 text-lg font-medium text-text hover:bg-black/7">Contact Us</a>
+          </div>
         </div>
-    </el-disclosure>
+      </div>
+    </div>
+  </div>
+
+  <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+    <div class="space-y-1 px-2 pt-2 pb-3">
+      <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+        <a href="#" class="block rounded-md px-3 py-2 text-lg font-medium text-text hover:bg-black/7">Home</a>
+        <a href="#" class="block rounded-md px-3 py-2 text-lg font-medium text-text hover:bg-black/7">News</a>
+        <a href="#" class="block rounded-md px-3 py-2 text-lg font-medium text-text hover:bg-black/7">More Info</a>
+        <a href="#" class="block rounded-md px-3 py-2 text-lg font-medium text-text hover:bg-black/7">Contact Us</a>
+    </div>
+  </el-disclosure>
 </nav>
+
 
 
 <div class="container mx-auto py-20 max-w-screen-xl">
@@ -131,19 +92,23 @@
         </div>
 
         <div class="grid grid-cols-12 gap-6">
-            <div class="lg:col-span-3 md:col-span-6 sm:col-span-12 col-span-full">
-                <div class="flex flex-col gap-2.5 p-6 bg-blue border">    
-                        <div class="overflow-hidden gap-2.5 rounded-lg bg-white border-4 border-black">
+            <div class="lg:col-span-3 md:col-span-6 sm:col-span-12 col-span-full" >
+                <div class="flex flex-col justify-between gap-2.5  p-6 bg-blue border" style="height: -webkit-fill-available;">    
+                    <div>
+                        <div class="overflow-hidden gap-2.5 mb-2  rounded-lg bg-white border-4 border-black">
                             <img src="./images/helpbutton.png" class="object-right"/>
                         </div>
                         <div class="flex flex-col overflow-hidden gap-4">
                             <p class="text-3xl font-bold text-text">
-                                Emergency Button
+                                Help Button
                             </p>
                             <p class="text-2xl font-semibold text-muted">
-                                Emergency button for any issues that a patient may have with varying levels of severity for a certain issue
+                               Help button for any issues that a patient may have with varying levels of severity for a certain issue
                             </p>
                         </div>
+                    </div>
+
+                    <div>
                         <a href="#section1"class="w-fit">
                             <div class="flex gap-2.5">
                                 <p class="text-2xl font-semibold text-text underline">
@@ -156,23 +121,27 @@
                                 </svg>
                             </div>
                         </a>
-                    
+                    </div>
                 </div>
             </div>
 
-            <div class="lg:col-span-3 md:col-span-6 sm:col-span-12 col-span-full">
-                <div class="flex flex-col gap-2.5 p-6 bg-blue border">    
-                        <div class="overflow-hidden gap-2.5 rounded-lg bg-white border-4 border-black">
-                            <img src="./images/helpbutton.png" />
+            <div class="lg:col-span-3 md:col-span-6 sm:col-span-12 col-span-full" >
+                <div class="flex flex-col justify-between gap-2.5 p-6 bg-blue border" style="height: -webkit-fill-available;">    
+                    <div>
+                        <div class="overflow-hidden gap-2.5 mb-2 rounded-lg bg-white border-4 border-black">
+                            <img src="./images/quickContactsCrop.png" class="object-right"/>
                         </div>
                         <div class="flex flex-col overflow-hidden gap-4">
                             <p class="text-3xl font-bold text-text">
-                                Emergency Button
+                                Contacts
                             </p>
                             <p class="text-2xl font-semibold text-muted">
-                                Emergency button for any issues that a patient may have with varying levels of severity for a certain issue
+                                Add commonly contacted people for an elderly person to message in one place
                             </p>
                         </div>
+                    </div>
+
+                    <div>
                         <a href="#section2"class="w-fit">
                             <div class="flex gap-2.5">
                                 <p class="text-2xl font-semibold text-text underline">
@@ -185,23 +154,27 @@
                                 </svg>
                             </div>
                         </a>
-                    
+                    </div>
                 </div>
             </div>
 
-            <div class="lg:col-span-3 md:col-span-6 sm:col-span-12 col-span-full">
-                <div class="flex flex-col gap-2.5 p-6 bg-blue border">    
-                        <div class="overflow-hidden gap-2.5 rounded-lg bg-white border-4 border-black">
-                            <img src="./images/helpbutton.png" />
+            <div class="lg:col-span-3 md:col-span-6 sm:col-span-12 col-span-full" >
+                <div class="flex flex-col justify-between gap-2.5 p-6 bg-blue border" style="height: -webkit-fill-available;">    
+                    <div>
+                        <div class="overflow-hidden gap-2.5 mb-2  rounded-lg bg-white border-4 border-black">
+                            <img src="./images/quickRemindersCrop.png" class="object-right"/>
                         </div>
                         <div class="flex flex-col overflow-hidden gap-4">
                             <p class="text-3xl font-bold text-text">
-                                Emergency Button
+                                Reminders
                             </p>
                             <p class="text-2xl font-semibold text-muted">
-                                Emergency button for any issues that a patient may have with varying levels of severity for a certain issue
+                                Reminders for an elderly person to keep track of their daily tasks
                             </p>
                         </div>
+                    </div>
+
+                    <div>
                         <a href="#section3"class="w-fit">
                             <div class="flex gap-2.5">
                                 <p class="text-2xl font-semibold text-text underline">
@@ -214,23 +187,27 @@
                                 </svg>
                             </div>
                         </a>
-                    
+                    </div>
                 </div>
             </div>
             
-            <div class="lg:col-span-3 md:col-span-6 sm:col-span-12 col-span-full">
-                <div class="flex flex-col gap-2.5 p-6 bg-blue border">    
-                        <div class="overflow-hidden gap-2.5 rounded-lg bg-white border-4 border-black">
-                            <img src="./images/helpbutton.png" />
+            <div class="lg:col-span-3 md:col-span-6 sm:col-span-12 col-span-full" >
+                <div class="flex flex-col justify-between gap-2.5 p-6 bg-blue border" style="height: -webkit-fill-available;">    
+                    <div>
+                        <div class="overflow-hidden gap-2.5 mb-2 rounded-lg bg-white border-4 border-black">
+                            <img src="./images/mapCrop.png" class="object-right"/>
                         </div>
                         <div class="flex flex-col overflow-hidden gap-4">
                             <p class="text-3xl font-bold text-text">
-                                Emergency Button
+                                Map
                             </p>
                             <p class="text-2xl font-semibold text-muted">
-                                Emergency button for any issues that a patient may have with varying levels of severity for a certain issue
+                                Map allows for an elderly person to see where they are while a carer can keep track of them
                             </p>
                         </div>
+                    </div>
+
+                    <div>
                         <a href="#section4"class="w-fit">
                             <div class="flex gap-2.5">
                                 <p class="text-2xl font-semibold text-text underline">
@@ -243,7 +220,7 @@
                                 </svg>
                             </div>
                         </a>
-                    
+                    </div>
                 </div>
             </div>
         </div>
@@ -253,15 +230,15 @@
 <div class="bg-secondary" id="section1">
     <div class="lg:container relative mx-auto py-20 max-w-screen-xl">
         <div class="grid grid-cols-12 gap-3 static">
-            <div class="col-span-6 top-0 pt-10 h-fit sticky z-10 bg-secondary">
-                <h3 class="text-5xl font-bold text-text pb-8">Help Button</h3>
-                <div class="flex flex-col w-fit gap-2">
-                    <p class="text-2xl font-semibold text-muted">The Help Button allows a person using our app to send an alert to a carer where they can then choose between calling their carer or talking to an AI-Chatbot if they are not available.</p>
-                    <p class="text-2xl font-semibold text-muted">When the help button is used it will send a notification to the carer letting them now it has been used while the patient can send additional information to there carer like the severity of their issue and then they can write a piece of text to the carer for additional information on what their issue might be if they choose to.  </p>
+            <div class="md:col-span-6 col-span-12 top-0 pt-10 h-fit sticky z-10 bg-secondary">
+                <h3 class="text-3xl md:text-5xl font-bold text-text pb-8">Help Button</h3>
+                <div class="flex flex-col w-fit gap-4 text-lg">
+                    <p class="md:text-2xl font-semibold text-muted">The Help Button allows a person using our app to send an alert to a carer where they can then choose between calling their carer or talking to an AI-Chatbot if they are not available.</p>
+                    <p class="md:text-2xl font-semibold text-muted">When the help button is used it will send a notification to the carer letting them now it has been used while the patient can send additional information to there carer like the severity of their issue and then they can write a piece of text to the carer for additional information on what their issue might be if they choose to.  </p>
                 </div>
-            </div>
+            </div> 
             
-            <div class="col-span-6 z-0">
+            <div class="md:col-span-6 col-span-12 z-0">
                 <img class="border mb-4" src="./images/helpButtonBG.png" alt="">
                 <img class="border" src="./images/alertCall.png" alt="">
             </div>
@@ -272,18 +249,18 @@
 <div class="bg-secondary-surface" id="section2">
     <div class="lg:container relative mx-auto py-20 max-w-screen-xl">
         <div class="grid grid-cols-12 gap-4 static">
-            <div class="col-span-6">
+            <div class="md:col-span-6 col-span-12 z-0 md:order-first order-last">
                 <img class="border mb-4" src="./images/quickContacts.png" alt="">
                 <img class="border" src="./images/contactsPage.png" alt="">
             </div>
 
-            <div class="col-span-6 top-0 pt-10 h-fit sticky z-10 bg-secondary-surface">
-                <h3 class="text-5xl font-bold text-text pb-8">Help Button</h3>
-                <div class="flex flex-col w-fit gap-2">
-                    <p class="text-2xl font-semibold text-muted">The Help Button allows a person using our app to send an alert to a carer where they can then choose between calling their carer or talking to an AI-Chatbot if they are not available.</p>
-                    <p class="text-2xl font-semibold text-muted">When the help button is used it will send a notification to the carer letting them now it has been used while the patient can send additional information to there carer like the severity of their issue and then they can write a piece of text to the carer for additional information on what their issue might be if they choose to.  </p>
+            <div class="md:col-span-6 col-span-12 top-0 pt-10 h-fit sticky z-10 bg-secondary-surface md:order-last order-first">
+                <h3 class="text-3xl md:text-5xl font-bold text-text pb-8">Contacts</h3>
+                <div class="flex flex-col w-fit gap-4 text-lg">
+                    <p class="md:text-2xl font-semibold text-muted">The Help Button allows a person using our app to send an alert to a carer where they can then choose between calling their carer or talking to an AI-Chatbot if they are not available.</p>
+                    <p class="md:text-2xl font-semibold text-muted">When the help button is used it will send a notification to the carer letting them now it has been used while the patient can send additional information to there carer like the severity of their issue and then they can write a piece of text to the carer for additional information on what their issue might be if they choose to.  </p>
                 </div>
-            </div>
+            </div> 
             
         </div>
     </div>
@@ -291,16 +268,16 @@
 
 <div class="bg-secondary" id="section3">
     <div class="lg:container relative mx-auto py-20 max-w-screen-xl">
-        <div class="grid grid-cols-12 gap-4 static">
-            <div class="col-span-6 top-0 pt-10 h-fit sticky z-10 bg-secondary">
-                <h3 class="text-5xl font-bold text-text pb-8">Help Button</h3>
-                <div class="flex flex-col w-fit gap-2">
-                    <p class="text-2xl font-semibold text-muted">The Help Button allows a person using our app to send an alert to a carer where they can then choose between calling their carer or talking to an AI-Chatbot if they are not available.</p>
-                    <p class="text-2xl font-semibold text-muted">When the help button is used it will send a notification to the carer letting them now it has been used while the patient can send additional information to there carer like the severity of their issue and then they can write a piece of text to the carer for additional information on what their issue might be if they choose to.  </p>
+        <div class="grid grid-cols-12 gap-3 static">
+            <div class="md:col-span-6 col-span-12 top-0 pt-10 h-fit sticky z-10 bg-secondary">
+                <h3 class="text-3xl md:text-5xl font-bold text-text pb-8">Reminders</h3>
+                <div class="flex flex-col w-fit gap-4 text-lg">
+                    <p class="md:text-2xl font-semibold text-muted">The Help Button allows a person using our app to send an alert to a carer where they can then choose between calling their carer or talking to an AI-Chatbot if they are not available.</p>
+                    <p class="md:text-2xl font-semibold text-muted">When the help button is used it will send a notification to the carer letting them now it has been used while the patient can send additional information to there carer like the severity of their issue and then they can write a piece of text to the carer for additional information on what their issue might be if they choose to.  </p>
                 </div>
-            </div>
+            </div> 
             
-            <div class="col-span-6">
+            <div class="md:col-span-6 col-span-12 z-0">
                 <img class="border mb-4" src="./images/quickReminders.png" alt="">
                 <img class="border" src="./images/remindersDay.png" alt="">
             </div>
@@ -311,29 +288,46 @@
 <div class="bg-secondary-surface" id="section4">
     <div class="lg:container relative mx-auto py-20 max-w-screen-xl">
         <div class="grid grid-cols-12 gap-4 static">
-            <div class="col-span-6">
+            <div class="md:col-span-6 col-span-12 z-0 md:order-first order-last">
                 <img class="border" src="./images/map.png" alt="">
             </div>
 
-            <div class="col-span-6 top-0 pt-10 h-fit sticky z-10 bg-secondary-surface">
-                <h3 class="text-5xl font-bold text-text pb-8">Help Button</h3>
-                <div class="flex flex-col w-fit gap-2">
-                    <p class="text-2xl font-semibold text-muted">The Help Button allows a person using our app to send an alert to a carer where they can then choose between calling their carer or talking to an AI-Chatbot if they are not available.</p>
-                    <p class="text-2xl font-semibold text-muted">When the help button is used it will send a notification to the carer letting them now it has been used while the patient can send additional information to there carer like the severity of their issue and then they can write a piece of text to the carer for additional information on what their issue might be if they choose to.  </p>
+            <div class="md:col-span-6 col-span-12 top-0 pt-10 h-fit sticky z-10 bg-secondary-surface md:order-last order-first">
+                <h3 class="text-3xl md:text-5xl font-bold text-text pb-8">Map</h3>
+                <div class="flex flex-col w-fit gap-4 text-lg">
+                    <p class="md:text-2xl font-semibold text-muted">The Help Button allows a person using our app to send an alert to a carer where they can then choose between calling their carer or talking to an AI-Chatbot if they are not available.</p>
+                    <p class="md:text-2xl font-semibold text-muted">When the help button is used it will send a notification to the carer letting them now it has been used while the patient can send additional information to there carer like the severity of their issue and then they can write a piece of text to the carer for additional information on what their issue might be if they choose to.  </p>
                 </div>
-            </div>
+            </div> 
             
         </div>
     </div>
 </div>
 
+
 <div class="lg:container mx-auto py-20 max-w-screen-xl">
     <div class="gap-10 grid grid-cols-12">
         <div class="md:col-span-6 col-span-full">
             <h3 class="text-5xl font-bold text-text pb-8">Help Button</h3>
-            <div class="flex flex-col w-fit text-wrap">
-                <p class="text-2xl font-semibold text-muted">The Help Button allows a person using our app to send an alert to a carer where they can then choose between calling their carer or talking to an AI-Chatbot if they are not available.</p>
-                <p class="text-2xl font-semibold text-muted">When the help button is used it will send a notification to the carer letting them now it has been used while the patient can send additional information to there carer like the severity of their issue and then they can write a piece of text to the carer for additional information on what their issue might be if they choose to.  </p>
+            <div class="flex flex-col text-wrap text-2xl font-semibold text-muted">
+                <p>Along with all the features for the patient there are some additional features for the carer </p>
+                <ul class="list-disc" style="padding: 0px 0px 0px 32px">
+                    <li >
+                        <p>
+                            A button on the contacts page allows the carer to add contacts to the patient side and add them to a group chat if wanted
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            The carer can also add reminders for the patient if they ever need to change anything or are setting up a family gathering
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            On the map the carer can see where their patient is and if they are outside a specified area from their home
+                        </p>
+                    </li>
+                </ul>
             </div>
         </div>
 
@@ -341,9 +335,9 @@
             <div id="indicators-carousel" class="relative flex justify-evenly w-full" data-carousel="static">
 
                 <button type="button" class="top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7" />
+                        <span class="inline-flex items-center justify-center w-10 h-16 rounded-base bg-white border">
+                        <svg class="w-5 h-5 text-black rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m15 19-7-7 7-7" />
                         </svg>
                         <span class="sr-only">Previous</span>
                     </span>
@@ -371,9 +365,9 @@
 
                 
                 <button type="button" class=" top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7" />
+                    <span class="inline-flex items-center justify-center w-10 h-16 rounded-base bg-white border">
+                        <svg class="w-5 h-5 text-black rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m9 5 7 7-7 7" />
                         </svg>
                         <span class="sr-only">Next</span>
                     </span>
@@ -387,7 +381,7 @@
     <div class="mx-auto w-full max-w-screen-xl ">
       <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
         <div>
-            <h2 class="mb-6 text-x text-white font-bold uppercase">Company</h2>
+            <h2 class="mb-6 text-xl text-white font-bold uppercase">Company</h2>
             <ul class="text-white font-medium">
                 <li class="mb-4">
                     <a href="" class="hover:underline">About</a>
@@ -404,38 +398,7 @@
             </ul>
         </div>
         <div>
-            <h2 class="mb-6 text-x text-white font-bold uppercase">Help center</h2>
-            <ul class="text-white font-medium">
-                <li class="mb-4">
-                    <a href="" class="hover:underline">Discord Server</a>
-                </li>
-                <li class="mb-4">
-                    <a href="" class="hover:underline">Twitter</a>
-                </li>
-                <li class="mb-4">
-                    <a href="" class="hover:underline">Facebook</a>
-                </li>
-                <li class="mb-4">
-                    <a href="" class="hover:underline">Contact Us</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h2 class="mb-6 text-x text-white font-bold uppercase">Legal</h2>
-            <ul class="text-white font-medium">
-                <li class="mb-4">
-                    <a href="" class="hover:underline">Privacy Policy</a>
-                </li>
-                <li class="mb-4">
-                    <a href="" class="hover:underline">Licensing</a>
-                </li>
-                <li class="mb-4">
-                    <a href="" class="hover:underline">Terms &amp; Conditions</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h2 class="mb-6 text-x text-white font-bold uppercase">Download</h2>
+            <h2 class="mb-6 text-xl text-white font-bold uppercase">Download</h2>
             <ul class="text-white font-medium">
                 <li class="mb-4">
                     <a href="" class="hover:underline">iOS</a>
@@ -451,10 +414,40 @@
                 </li>
             </ul>
         </div>
+        <div>
+            <h2 class="mb-6 text-xl text-white font-bold uppercase">Help center</h2>
+            <ul class="text-white font-medium">
+                <li class="mb-4">
+                    <a href="" class="hover:underline">Twitter</a>
+                </li>
+                <li class="mb-4">
+                    <a href="" class="hover:underline">Facebook</a>
+                </li>
+                <li class="mb-4">
+                    <a href="" class="hover:underline">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="mb-6 text-xl text-white font-bold uppercase">Legal</h2>
+            <ul class="text-white font-medium">
+                <li class="mb-4">
+                    <a href="" class="hover:underline">Privacy Policy</a>
+                </li>
+                <li class="mb-4">
+                    <a href="" class="hover:underline">Licensing</a>
+                </li>
+                <li class="mb-4">
+                    <a href="" class="hover:underline">Terms &amp; Conditions</a>
+                </li>
+            </ul>
+        </div>
+        
     </div>
     </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
 <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
 </body>
